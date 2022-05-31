@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,246 +8,273 @@
 	<title> - Chemoinformatics</title>
 	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="" />
-<meta property="og:description" content="Research at Chemoinformatics lab , Soongsil University Soongsil University is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology
+	<meta property="og:title" content="" />
+	<meta property="og:description"
+		content="Research at Chemoinformatics lab , Soongsil University Soongsil University is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology
  We carry out optimized convergence research tasks of the fourth industrial revolution era ranging from life technology, robot technology, IT, energy, distribution logistics, contents, and train high-fidelity research manpower that will be the hero of the convergence industry in Korea." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://Takshan.github.io/research/" /><meta property="article:section" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://Takshan.github.io/research/" />
+	<meta property="article:section" content="" />
 
 
 
 
-		<meta itemprop="name" content="">
-<meta itemprop="description" content="Research at Chemoinformatics lab , Soongsil University Soongsil University is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology
+	<meta itemprop="name" content="">
+	<meta itemprop="description"
+		content="Research at Chemoinformatics lab , Soongsil University Soongsil University is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology
  We carry out optimized convergence research tasks of the fourth industrial revolution era ranging from life technology, robot technology, IT, energy, distribution logistics, contents, and train high-fidelity research manpower that will be the hero of the convergence industry in Korea.">
 
-<meta itemprop="wordCount" content="128">
-<meta itemprop="keywords" content="" />
-		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Research at Chemoinformatics lab , Soongsil University Soongsil University is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology
- We carry out optimized convergence research tasks of the fourth industrial revolution era ranging from life technology, robot technology, IT, energy, distribution logistics, contents, and train high-fidelity research manpower that will be the hero of the convergence industry in Korea."/>
+	<meta itemprop="wordCount" content="128">
+	<meta itemprop="keywords" content="" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description"
+		content="Research at Chemoinformatics lab , Soongsil University Soongsil University is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology
+ We carry out optimized convergence research tasks of the fourth industrial revolution era ranging from life technology, robot technology, IT, energy, distribution logistics, contents, and train high-fidelity research manpower that will be the hero of the convergence industry in Korea." />
 
 
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/custom.css">
 
 	<link rel="shortcut icon" href="https://Takshan.github.io/favicon.ico">
-	
+
+	<py-env>
+		- py3dmol
+		- ipywidgets
+	</py-env>
 </head>
-<py-env>
-    - py3dmol
-	- ipywidgets
-</py-env>
+
 <body class="body">
-		<header class="header">
-	
-	<div class="logo logo--mixed">
-		<div class="container">
-			<a class="logo__link" href="/" title="Chemoinformatics Research group" rel="home">
-				<div class="logo__item logo__imagebox">
+	<header class="header">
+
+		<div class="logo logo--mixed">
+			<div class="container">
+				<a class="logo__link" href="/" title="Chemoinformatics Research group" rel="home">
+					<div class="logo__item logo__imagebox">
 						<img class="logo__img" src="/img/ssu.png">
-					</div><div class="logo__item logo__text">
+					</div>
+					<div class="logo__item logo__text">
 						<div class="logo__title">Chemoinformatics Research group</div>
 						<div class="logo__tagline">Welcome to Chemoinforamtics Resrach Lab</div>
 					</div>
-			</a>
+				</a>
+			</div>
 		</div>
-	</div>
 
-</header>
+	</header>
 
-<nav class="menu">
-	<div class="container">
-		<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-			<span class="menu__btn-title" tabindex="-1"></span>
-		</button>
-		<ul class="menu__list">
-			<li class="menu__item">
-				<a class="menu__link" href="/home/">
-					<i class='fa fa-heart'></i>
-					<span class="menu__text">Home</span>
-					
-				</a>
-			</li>
-			<li class="menu__item">
-				<a class="menu__link" href="https://eng.ssu.ac.kr/">
-					
-					<span class="menu__text">SSU</span>
-					
-				</a>
-			</li>
-			<li class="menu__item">
-				<a class="menu__link" href="/research/">
-					<i class='fa fa-road'></i>
-					<span class="menu__text">Research</span>
-					
-				</a>
-			</li>
-			<li class="menu__item">
-				<a class="menu__link" href="/publications/">
-					<i class='fa fa-heart'></i>
-					<span class="menu__text">Publications</span>
-					
-				</a>
-			</li>
-			<li class="menu__item">
-				<a class="menu__link" href="/tools/">
-					<i class='fa fa-heart'></i>
-					<span class="menu__text">Tools</span>
-					
-				</a>
-			</li>
-			<li class="menu__item">
-				<a class="menu__link" href="/members/">
-					<i class='fa fa-heart'></i>
-					<span class="menu__text">Members</span>
-					
-				</a>
-			</li>
-			<li class="menu__item">
-				<a class="menu__link" href="/contact/">
-					<i class='fa fa-road'></i>
-					<span class="menu__text">Contact</span>
-					
-				</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+	<nav class="menu">
+		<div class="container">
+			<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+				<span class="menu__btn-title" tabindex="-1"></span>
+			</button>
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a class="menu__link" href="/home/">
+						<i class='fa fa-heart'></i>
+						<span class="menu__text">Home</span>
 
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="https://eng.ssu.ac.kr/">
 
+						<span class="menu__text">SSU</span>
 
-		<div class="container wrapper flex">
-			<div class="primary">
-			
-<main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title"></h1>
-			<div class="post__meta meta"><div class="meta__item-author meta__item">
-	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Takshan</span>
-</div></div>
-		</header><div class="content post__content clearfix">
-			
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="/research/">
+						<i class='fa fa-road'></i>
+						<span class="menu__text">Research</span>
 
-<h1 id="research-at-chemoinformatics-lab-soongsil-university">Research at Chemoinformatics lab , Soongsil University</h1>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="/publications/">
+						<i class='fa fa-heart'></i>
+						<span class="menu__text">Publications</span>
 
-<p><strong>Soongsil University</strong> is carrying out convergence research projects beyond the existing interdisciplinary research. We are enhancing the image of the university as a leader in convergence research and education leading to basic and applied technology and advanced technology</p>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="/tools/">
+						<i class='fa fa-heart'></i>
+						<span class="menu__text">Tools</span>
 
-<p><img src="/images/download.jpg" alt="Chemoinforamtics" /></p>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="/members/">
+						<i class='fa fa-heart'></i>
+						<span class="menu__text">Members</span>
 
-<ul>
-<li><p>We carry out optimized convergence research tasks of the fourth industrial revolution era ranging from life technology, robot technology, IT, energy, distribution logistics, contents, and train high-fidelity research manpower that will be the hero of the convergence industry in Korea.</p></li>
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="/contact/">
+						<i class='fa fa-road'></i>
+						<span class="menu__text">Contact</span>
 
-<li><p>Soongsil University is doing its best to serve as a support platform and a control tower to support comprehensive research in the field of humanities and social sciences as well as science and technology, cooperation with universities abroad, and support for large projects.</p></li>
-</ul>
-
+					</a>
+				</li>
+			</ul>
 		</div>
-	</article>
-
-	<div class="pyscript">
-
-		<py-script>
-			from ipywidgets import interact,fixed,IntSlider
-			import ipywidgets
-			import py3Dmol
-
-			def MolTo3DView(mol, size=(300, 300), style="stick", surface=False, opacity=0.5):
-			    """Draw molecule in 3D
-					
-			    Args:
-			    ----
-			        mol: rdMol, molecule to show
-			        size: tuple(int, int), canvas size
-			        style: str, type of drawing molecule
-			               style can be 'line', 'stick', 'sphere', 'carton'
-			        surface, bool, display SAS
-			        opacity, float, opacity of surface, range 0.0-1.0
-			    Return:
-			    ----
-			        viewer: py3Dmol.view, a class for constructing embedded 3Dmol.js views in ipython notebooks.
-			    """
-			    assert style in ('line', 'stick', 'sphere', 'carton')
-			    mblock = Chem.MolToMolBlock(mol)
-			    viewer = py3Dmol.view(width=size[0], height=size[1])
-			    viewer.addModel(mblock, 'mol')
-			    viewer.setStyle({style:{}})
-			    if surface:
-			        viewer.addSurface(py3Dmol.SAS, {'opacity': opacity})
-			    viewer.zoomTo()
-			    return viewer
-
-			smis = [ 'COc3nc(OCc2ccc(C#N)c(c1ccc(C(=O)O)cc1)c2P(=O)(O)O)ccc3C[NH2+]CC(I)NC(=O)C(F)(Cl)Br',
-    			'CC(NCCNCC1=CC=C(OCC2=C(C)C(C3=CC=CC=C3)=CC=C2)N=C1OC)=O',
-    			'Cc1c(COc2cc(OCc3cccc(c3)C#N)c(CN3C[C@H](O)C[C@H]3C(O)=O)cc2Cl)cccc1-c1ccc2OCCOc2c1',
-    			'CCCCC(=O)NCCCCC(=O)NCCCCCC(=O)[O-]',
-    			"CC(NCCNCC1=CC=C(OCC2=C(C)C(C3=CC=CC=C3)=CC=C2)N=C1OC)=O"]
-    
-			confs = [smi2conf(s) for s in smis]
-
-			def conf_viewer(idx):
-			    mol = confs[idx]
-			    return MolTo3DView(mol).show()
-
-			interact(conf_viewer, idx=ipywidgets.IntSlider(min=0,max=len(class_0_list)-1, step=1))
-		  </py-script>
-
-	</div>
-</main>
+	</nav>
 
 
 
+	<div class="container wrapper flex">
+		<div class="primary">
 
+			<main class="main" role="main">
+				<article class="post">
+					<header class="post__header">
+						<h1 class="post__title"></h1>
+						<div class="post__meta meta">
+							<div class="meta__item-author meta__item">
+								<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16">
+									<path
+										d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z" />
+								</svg><span class="meta__text">Takshan</span>
+							</div>
+						</div>
+					</header>
+					<div class="content post__content clearfix">
+
+
+						<h1 id="research-at-chemoinformatics-lab-soongsil-university">Research at Chemoinformatics lab ,
+							Soongsil University</h1>
+
+						<p><strong>Soongsil University</strong> is carrying out convergence research projects beyond the
+							existing interdisciplinary research. We are enhancing the image of the university as a
+							leader in convergence research and education leading to basic and applied technology and
+							advanced technology</p>
+
+						<p><img src="/images/download.jpg" alt="Chemoinforamtics" /></p>
+
+						<ul>
+							<li>
+								<p>We carry out optimized convergence research tasks of the fourth industrial revolution
+									era ranging from life technology, robot technology, IT, energy, distribution
+									logistics, contents, and train high-fidelity research manpower that will be the hero
+									of the convergence industry in Korea.</p>
+							</li>
+
+							<li>
+								<p>Soongsil University is doing its best to serve as a support platform and a control
+									tower to support comprehensive research in the field of humanities and social
+									sciences as well as science and technology, cooperation with universities abroad,
+									and support for large projects.</p>
+							</li>
+						</ul>
+
+					</div>
+				</article>
+
+
+			</main>
+
+			<div class="pyscript">
+
+				<py-script>
+					from ipywidgets import interact,fixed,IntSlider
+					import ipywidgets
+					import py3Dmol
+
+					def MolTo3DView(mol, size=(300, 300), style="stick", surface=False, opacity=0.5):
+					"""Draw molecule in 3D
+
+					Args:
+					----
+					mol: rdMol, molecule to show
+					size: tuple(int, int), canvas size
+					style: str, type of drawing molecule
+					style can be 'line', 'stick', 'sphere', 'carton'
+					surface, bool, display SAS
+					opacity, float, opacity of surface, range 0.0-1.0
+					Return:
+					----
+					viewer: py3Dmol.view, a class for constructing embedded 3Dmol.js views in ipython notebooks.
+					"""
+					assert style in ('line', 'stick', 'sphere', 'carton')
+					mblock = Chem.MolToMolBlock(mol)
+					viewer = py3Dmol.view(width=size[0], height=size[1])
+					viewer.addModel(mblock, 'mol')
+					viewer.setStyle({style:{}})
+					if surface:
+					viewer.addSurface(py3Dmol.SAS, {'opacity': opacity})
+					viewer.zoomTo()
+					return viewer
+
+					smis = [ 'COc3nc(OCc2ccc(C#N)c(c1ccc(C(=O)O)cc1)c2P(=O)(O)O)ccc3C[NH2+]CC(I)NC(=O)C(F)(Cl)Br',
+					'CC(NCCNCC1=CC=C(OCC2=C(C)C(C3=CC=CC=C3)=CC=C2)N=C1OC)=O',
+					'Cc1c(COc2cc(OCc3cccc(c3)C#N)c(CN3C[C@H](O)C[C@H]3C(O)=O)cc2Cl)cccc1-c1ccc2OCCOc2c1',
+					'CCCCC(=O)NCCCCC(=O)NCCCCCC(=O)[O-]',
+					"CC(NCCNCC1=CC=C(OCC2=C(C)C(C3=CC=CC=C3)=CC=C2)N=C1OC)=O"]
+
+					confs = [smi2conf(s) for s in smis]
+
+					def conf_viewer(idx):
+					mol = confs[idx]
+					return MolTo3DView(mol).show()
+
+					interact(conf_viewer, idx=ipywidgets.IntSlider(min=0,max=len(class_0_list)-1, step=1))
+				</py-script>
 
 			</div>
-			
+
+
+
 		</div>
-		<footer class="footer">
-	<div class="container footer__container flex">
-		
-		<div class="footer__copyright">
-			&copy; 2021 @chemoinformtics.
-			<span class="footer__copyright-credits"></span>
-			<span>, Soongsil University</span>
-		</div>
+
 	</div>
-</footer>
+	<footer class="footer">
+		<div class="container footer__container flex">
 
-<script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script>
+			<div class="footer__copyright">
+				&copy; 2021 @chemoinformtics.
+				<span class="footer__copyright-credits"></span>
+				<span>, Soongsil University</span>
+			</div>
+		</div>
+	</footer>
 
-    
-    <script type="text/javascript">
-        var _paq = _paq || [];
-  
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-  
-        
-        _paq.push([function() {
-          
-          var piwik_visitorId = this.getVisitorId();
-          var piwik_campaign = this.getAttributionCampaignName();
-          var piwik_keyword = this.getAttributionCampaignKeyword();
-          var piwik_referrer = this.getAttributionReferrerUrl();
-  
-          
-          $('.piwik-vid').val(piwik_visitorId);
-          $('.piwik-campaign').val(piwik_campaign);
-          $('.piwik-keyword').val(piwik_keyword);
-          $('.piwik-referrer').val(piwik_referrer);
-        }]);
-  
-        (function() {
-          var u="//suretybonds.piwikpro.com/";
-          _paq.push(['setTrackerUrl', u+'piwik.php']);
-          _paq.push(['setSiteId', 1]);
-          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-      </script>
+	<script async defer src="/js/menu.js"></script>
+	<script src="/js/custom.js"></script>
+
+
+	<script type="text/javascript">
+		var _paq = _paq || [];
+
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+
+
+		_paq.push([function () {
+
+			var piwik_visitorId = this.getVisitorId();
+			var piwik_campaign = this.getAttributionCampaignName();
+			var piwik_keyword = this.getAttributionCampaignKeyword();
+			var piwik_referrer = this.getAttributionReferrerUrl();
+
+
+			$('.piwik-vid').val(piwik_visitorId);
+			$('.piwik-campaign').val(piwik_campaign);
+			$('.piwik-keyword').val(piwik_keyword);
+			$('.piwik-referrer').val(piwik_referrer);
+		}]);
+
+		(function () {
+			var u = "//suretybonds.piwikpro.com/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', 1]);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+		})();
+	</script>
 </body>
+
 </html>
