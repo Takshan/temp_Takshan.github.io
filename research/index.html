@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title> - Chemoinformatics</title>
+	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="" />
@@ -140,6 +142,17 @@
 
 		</div>
 	</article>
+
+	<div class="pyscript">
+		<py-script>import nglview as nv
+			#view = nglview.NGLWidget()
+			view = nv.show_pdbid("6nzp")
+			view.show()
+			 
+			
+		</py-script>|
+
+	</div>
 </main>
 
 
